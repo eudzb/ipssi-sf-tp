@@ -1,0 +1,3 @@
+profil:
+      path: /
+      controller: App\Controller\profilController::profil

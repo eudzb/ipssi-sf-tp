@@ -1,0 +1,11 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+inscription:
+    resource: 'routes/inscription.yaml'
+    prefix: '/inscription'
+
+profil:
+    resource: 'routes/profil.yaml'
+    prefix: '/profil'
