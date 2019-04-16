@@ -1,2 +1,0 @@
-// Expliquer pourquoi on a utilisé certains composant / librairies
-
