@@ -21,3 +21,7 @@ game:
 admin:
     resource: 'routes/admin.yaml'
     prefix: '/admin'
+
+connexion:
+    resource: 'routes/connexion.yaml'
+    prefix: '/connexion'
