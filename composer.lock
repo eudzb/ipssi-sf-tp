@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "26cd051c834b4422d2065dcf6fb54094",
+    "content-hash": "4f457b758210c1f151219af310ffe0d0",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -4099,7 +4099,7 @@
         },
         {
             "name": "symfony/web-server-bundle",
-            "version": "v4.2.5",
+            "version": "v4.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/web-server-bundle.git",
