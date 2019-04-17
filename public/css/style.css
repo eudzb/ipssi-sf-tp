@@ -168,3 +168,21 @@ a, button{
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
+
+.register{
+    margin-top: 50%;
+    margin-left: 50%;
+}
+
+.centered-form{
+    margin-top: 60px;
+}
+
+.centered-form .panel{
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+
+.form-horizontal{
+    margin-top:7%;
+}
