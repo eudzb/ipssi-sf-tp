@@ -13,3 +13,11 @@ profil:
 home:
     resource: 'routes/home.yaml'
     prefix: '/'
+
+game:
+    resource: 'routes/game.yaml'
+    prefix: '/game'
+
+admin:
+    resource: 'routes/admin.yaml'
+    prefix: '/admin'

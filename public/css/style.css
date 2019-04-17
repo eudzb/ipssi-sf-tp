@@ -2,7 +2,9 @@
 html, body {
     background-color: #fff!important;
 }
-
+body{
+    margin-top: 9rem!important;
+}
 a, button{
     letter-spacing: 3px;
     font-size: 12px;
@@ -47,9 +49,9 @@ a, button{
 .firstPic {
     grid-column: 1 / span 7;
     grid-row: 1 / span 2;
-    background-image: url('./img/house.jpeg');
+    background-image: url('../img/house.jpeg');
     background-position: center center;
-// background-attachment: fixed;
+/* background-attachment: fixed;*/
     background-size: cover;
     border-radius: 0.4rem 0 0 0.4rem;
 }
@@ -57,9 +59,9 @@ a, button{
 .secondPic {
     grid-column: 8 / span 4;
     grid-row: 1;
-    background: url('./img/casino.jpeg');
+    background-image: url('../img/casino.jpeg');
     background-position: center center;
-// background-attachment: fixed;
+/* background-attachment: fixed;*/
     background-size: cover;
     border-radius: 0 0.4rem 0 0;
 }
@@ -67,9 +69,9 @@ a, button{
 .thirdPic {
     grid-column: 8 / span 4;
     grid-row: 2;
-    background: url('./img/money.jpeg');
+    background-image : url('../img/money.jpeg');
     background-position: center center;
-// background-attachment: fixed;
+/* background-attachment: fixed;*/
     background-size: cover;
     border-radius: 0 0 0.4rem 0;
 }
@@ -167,4 +169,11 @@ a, button{
     filter: alpha(opacity=100);
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
+}
+/* footer */
+.copyright {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: .1rem;
 }

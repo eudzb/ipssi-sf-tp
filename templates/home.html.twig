@@ -1,5 +1,45 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-    base
-{% endblock %}
+    <h3 class="ml-5 simple-space font-weight-light">Articles du moment</h3>
 
+    <table class="table table-striped mt-5 mb-5">
+        <thead>
+        <tr>
+            <th class="simple-space" scope="col">Auteur</th>
+            <th class="simple-space" scope="col">Aperçu</th>
+            <th class="simple-space" scope="col">Date</th>
+        </tr>
+        </thead>
+        <tbody">
+        <tr>
+            <td class="simple-space small-font">Mark</td>
+            <td class="simple-space small-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+            <td class="simple-space small-font">17/04/2019</td>
+        </tr>
+        <tr>
+            <td class="simple-space small-font">Jacob</td>
+            <td class="simple-space small-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+            <td class="simple-space small-font">17/04/2019</td>
+        </tr>
+        <tr>
+            <td class="simple-space small-font">Larry</td>
+            <td class="simple-space small-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+            <td class="simple-space small-font">17/04/2019</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link simple-space text-dark" href="#" tabindex="-1">Retour</a>
+            </li>
+            <li class="page-item"><a class="page-link simple-space text-dark" href="#">1</a></li>
+            <li class="page-item"><a class="page-link simple-space text-dark" href="#">2</a></li>
+            <li class="page-item"><a class="page-link simple-space text-dark" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link simple-space text-dark" href="#">Suivant</a>
+            </li>
+        </ul>
+    </nav>
+{% endblock %}

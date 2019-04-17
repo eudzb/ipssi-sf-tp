@@ -7,13 +7,11 @@
  */
 
 namespace App\Controller;
-
-
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class homeController extends AbstractController
 {
     public function home() {
-        return $this->render("home.html.twig"); // futur page d'accueil
+        return $this->render("home.html.twig"); //page d'accueil
     }
 }

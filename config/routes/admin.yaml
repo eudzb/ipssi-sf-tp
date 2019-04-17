@@ -1,0 +1,3 @@
+admin:
+  path: /
+  controller: App\Controller\adminController::admin
