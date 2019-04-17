@@ -8,6 +8,25 @@
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     {% endblock %}
 </head>
+<header>
+    <nav class="navbar navbar-expand-lg p-3 fixed-top bg-dark fixed menu-shadow">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <div class="col-4 navbar-nav mr-auto mt-2 mt-lg-0 pl-3">
+                <img src="{{ asset('img/logo.png')}}" alt="logo" height="40" style="cursor:pointer">
+            </div>
+            <div class="col-md-4 text-center">
+                <button type="button" class="btn btn-outline-success btn-lg text-center text-uppercase ">Jouer</button>
+            </div>
+            <div class="col-4 pl-4 text-right my-2">
+                <a class="nav-link text-uppercase text-light float-right">Créer un compte</a>
+                <a class="nav-link ml-5 text-uppercase text-light float-right">Connexion</a>
+            </div>
+        </div>
+    </nav>
+</header>
 <body>
 {% block body %}{% endblock %}
 {% block javascripts %}{% endblock %}

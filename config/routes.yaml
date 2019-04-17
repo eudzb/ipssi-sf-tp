@@ -9,3 +9,7 @@ inscription:
 profil:
     resource: 'routes/profil.yaml'
     prefix: '/profil'
+
+home:
+    resource: 'routes/home.yaml'
+    prefix: '/'
