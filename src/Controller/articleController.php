@@ -9,11 +9,14 @@
 namespace App\Controller;
 
 
+use App\Entity\Article;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class articleController extends AbstractController
 {
     public function article() {
-        return $this->render("article.html.twig");
+        $repository = $this->getDoctrine()->getRepository(Article::class);
+        return $this->render('article.html.twig', ['articles' => $repository->findAll()]);
+        //return $this->render("article.html.twig");
     }
 }
