@@ -7,11 +7,10 @@ jobs:
 
     steps:
       - checkout
+      - run:
+          name: Install vendor
+          command: composer install
 
       - run:
-        name: Install vendor
-        command: composer install
-
-      - run:
-        name: Code Style
-        command: make tests
+          name: Code Style
+          command: make tests
