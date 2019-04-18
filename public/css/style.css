@@ -2,7 +2,10 @@
 html, body {
     background-color: #fff!important;
 }
-
+body{
+    margin-top: 9rem!important;
+    text-align: center!important;
+}
 a, button{
     letter-spacing: 3px;
     font-size: 12px;
@@ -47,9 +50,9 @@ a, button{
 .firstPic {
     grid-column: 1 / span 7;
     grid-row: 1 / span 2;
-    background-image: url('./img/house.jpeg');
+    background-image: url('../img/house.jpeg');
     background-position: center center;
-// background-attachment: fixed;
+/* background-attachment: fixed;*/
     background-size: cover;
     border-radius: 0.4rem 0 0 0.4rem;
 }
@@ -57,9 +60,9 @@ a, button{
 .secondPic {
     grid-column: 8 / span 4;
     grid-row: 1;
-    background: url('./img/casino.jpeg');
+    background-image: url('../img/casino.jpeg');
     background-position: center center;
-// background-attachment: fixed;
+/* background-attachment: fixed;*/
     background-size: cover;
     border-radius: 0 0.4rem 0 0;
 }
@@ -67,9 +70,9 @@ a, button{
 .thirdPic {
     grid-column: 8 / span 4;
     grid-row: 2;
-    background: url('./img/money.jpeg');
+    background-image : url('../img/money.jpeg');
     background-position: center center;
-// background-attachment: fixed;
+/* background-attachment: fixed;*/
     background-size: cover;
     border-radius: 0 0 0.4rem 0;
 }
@@ -168,21 +171,14 @@ a, button{
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
-
-.register{
-    margin-top: 50%;
-    margin-left: 50%;
+/* footer */
+.copyright {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: .1rem;
 }
 
-.centered-form{
-    margin-top: 60px;
-}
-
-.centered-form .panel{
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
-}
-
-.form-horizontal{
-    margin-top:7%;
+.formulaire {
+    margin: 2rem 35rem;
 }

@@ -1,50 +1,28 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-
-    <form class="form-horizontal form text-center" action='' method="POST">
+    {{ form_start(InscriptionType) }}
+    <form class=" form text-center" action='' method="POST">
         <fieldset>
             <div id="legend">
-                <legend class="mb-2">Register</legend>
-            </div>
-            <div class="control-group">
-                <!-- Username -->
-                <label class="control-label"  for="username">Username</label>
-                <div class="controls">
-                    <input type="text" id="username" name="username" placeholder="" class="input-xlarge mb-2">
+                <legend class="mb-2">Inscrivez-vous</legend>
+                <div class="formulaire">
+                 {#   {{ form_label(InscriptionType.name,
+                        'label',
+                        {'attr': {
+                            'class': 'text-success'
+                        }
+                        })
+                    }}#}
+                    {{ form_errors(InscriptionType) }}
+                    {{ form_rest(InscriptionType) }}
                 </div>
-            </div>
+                <div class="controls">
+                    <button class="btn btn-success" type="submit">Enregistrer</button>
+                </div>
 
-            <div class="control-group">
-                <!-- E-mail -->
-                <label class="control-label" for="email">E-mail</label>
-                <div class="controls">
-                    <input type="text" id="email" name="email" placeholder="" class="input-xlarge mb-2">
-                </div>
-            </div>
-
-            <div class="control-group">
-                <!-- Password-->
-                <label class="control-label" for="password">Password</label>
-                <div class="controls">
-                    <input type="password" id="password" name="password" placeholder="" class="input-xlarge mb-2">
-                </div>
-            </div>
-
-            <div class="control-group">
-                <!-- Password -->
-                <label class="control-label"  for="password_confirm">Password (Confirm)</label>
-                <div class="controls">
-                    <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge mb-2">
-                </div>
-            </div>
-
-            <div class="control-group mt-5">
-                <!-- Button -->
-                <div class="controls">
-                    <button class="btn btn-success">Register</button>
-                </div>
             </div>
         </fieldset>
     </form>
+    {{ form_end (InscriptionType) }}
 {% endblock %}
