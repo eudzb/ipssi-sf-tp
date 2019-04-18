@@ -5,17 +5,20 @@
     <table class="table table-striped mt-5 mb-5">
         <thead>
         <tr>
-            <th class="simple-space" scope="col">Auteur</th>
-            <th class="simple-space" scope="col">Aperçu</th>
-            <th class="simple-space" scope="col">Date</th>
+            <th class="simple-space border-0" scope="col">Articles</th>
         </tr>
         </thead>
-        <tbody">
+        <tbody>
+
+        {% for article in articles %}
         <tr>
-            <td class="simple-space small-font">Mark</td>
-            <td class="simple-space small-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-            <td class="simple-space small-font">17/04/2019</td>
+            <td class="simple-space small-font">{{ article.id }}</td>
+            <td class="simple-space small-font">{{ article.auteur}}</td>
+            <td class="simple-space small-font">{{ article.title}}</td>
         </tr>
+        {% endfor %}
+
+        <!--
         <tr>
             <td class="simple-space small-font">Jacob</td>
             <td class="simple-space small-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
@@ -26,6 +29,7 @@
             <td class="simple-space small-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
             <td class="simple-space small-font">17/04/2019</td>
         </tr>
+        -->
         </tbody>
     </table>
 
