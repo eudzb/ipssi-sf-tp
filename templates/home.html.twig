@@ -14,7 +14,9 @@
         <tr>
             <td class="simple-space small-font">{{ article.id }}</td>
             <td class="simple-space small-font">{{ article.auteur}}</td>
-            <td class="simple-space small-font">{{ article.title}}</td>
+            <td class="simple-space small-font">
+                <a href="{{ path('article') }}">{{  article.title}} </a>
+            </td>
         </tr>
         {% endfor %}
 

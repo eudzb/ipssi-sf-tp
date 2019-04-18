@@ -1,0 +1,69 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="col-4 offset-md-1 simple-space text-dark">
+            <h4>Article n°4</h4>
+        </div>
+        <div class="row mt-5">
+            <div class="col-6 offset-md-3 border rounded article-pic">
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-6 offset-md-3 description-article">
+           <span class="text-secondary simple-space small-font font-weight-light">
+             Une journée à Vegas Casino
+             <span class="font-italic float-right">Publié le 16/03/2019</span>
+             <span class="font-italic d-block">Écrit par Saïdou</span>
+           </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 offset-md-2 description-article">
+                <button type="button" class="btn btn-sm btn-outline-primary">Like</button>
+                <button type="button" class="btn btn-sm btn-outline-dark">Share</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-5 col-8 offset-md-2 text-justify simple-space content-article text-dark">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-5 col-1 offset-md-2">
+                <div class="member-picture rounded">
+                </div>
+                <span class="d-block simple-space text-dark small-font mt-2 text-center">Matt94</span>
+            </div>
+            <div class="col-4 comment-zone pl-3 pr-3 pt-2 pb-2 h-100">
+                <p>Super travail bravo !</p>
+                <p>À bientôt</p>
+                <span class="d-block small-font text-secondary font-italic float-right">17/03/2019</span>
+            </div>
+        </div>
+
+        <!-- Mettre un IF si la personne est connectée -->
+        <div class="row mt-3">
+            <div class="col-8 offset-md-2">
+                <div class="form-group">
+                    <label for="comments">
+                        <h4 class="simple-space text-dark">Laissez un commentaire !</h4>
+                    </label>
+                    <textarea
+                            class="form-control"
+                            id="comments"
+                            rows="5"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-8 offset-md-2 send-button-section">
+                <button type="button" name="send-button" class="btn btn-dark float-right">Envoyer</button>
+            </div>
+        </div>
+    </div>
+{% endblock %}

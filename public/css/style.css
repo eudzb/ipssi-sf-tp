@@ -177,3 +177,37 @@ a, button{
     color: #fff;
     letter-spacing: .1rem;
 }
+
+.article-pic {
+    background-image: url('../img/game.jpeg');
+    background-position: center center;
+    background-size: contain;
+    height: 18rem!important;
+    opacity: 0.9;
+}
+
+.description-article {
+    height: 4rem!important;
+}
+
+.content-article {
+    line-height: 1.7rem;
+}
+
+.member-picture {
+    background-image: url('../img/user-icon.png');
+    background-size: cover;
+    background-position: center center;
+    height: 4rem!important;
+}
+
+.comment-zone {
+    border: 1px solid #D6D6D6;
+    border-radius: 1.4rem;
+    background-color: #D6D6D6;
+    font-size: 0.9rem;
+}
+
+.send-button-section {
+    height: 2rem!important;
+}
