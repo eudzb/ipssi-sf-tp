@@ -56,13 +56,13 @@ stop:
 exe:
 	$(DC) exec -u 1000:1000 app /bin/bash
 
-.PHONY: tests ## Lance les tests de l'applications
-tests:
+.PHONY: test ## Lance les tests de l'applications
+test:
 	vendor/bin/phpcs src
 	vendor/bin/phpstan analyse --level 6 src
 
-.PHONY: tests-fix ## Fix le cs de mon app
-tests-fix:
+.PHONY: test-fix ## Fix le cs de mon app
+test-fix:
 	vendor/bin/phpcbf src
 
 ##
