@@ -12,7 +12,7 @@ help:
 		| expand -t14
 
 .PHONY: fstart
-fstart: docker-compose.override.yml
+fstart:
 	$(DC) pull || true
 	$(DC) build
 	$(DC) up -d
@@ -20,7 +20,7 @@ fstart: docker-compose.override.yml
 	$(DC) exec -u 1000:1000 app $(binConsole) doctrine:database:create
 
 .PHONY: start
-start: docker-compose.override.yml
+start:
 	$(DC) up -d
 	$(DC) exec -u 1000:1000 app composer install
 
@@ -47,5 +47,5 @@ tests-fix:
 	vendor/bin/phpcbf src
 
 
-docker-compose.override.yml: docker-compose.override.yml
-	$(RUN) cp docker-compose.override.yml.dist docker-compose.override.yml
+## docker-compose.override.yml: docker-compose.override.yml
+## 	$(RUN) cp docker-compose.override.yml.dist docker-compose.override.yml
