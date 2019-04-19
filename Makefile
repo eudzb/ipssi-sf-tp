@@ -47,5 +47,5 @@ tests-fix:
 	vendor/bin/phpcbf src
 
 
-docker-compose.override.yml: docker-compose.override.yml.dist
+docker-compose.override.yml: docker-compose.override.yml
 	$(RUN) cp docker-compose.override.yml.dist docker-compose.override.yml
