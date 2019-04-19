@@ -3,6 +3,17 @@
     <h3 class="ml-5 simple-space font-weight-light">Articles du moment</h3>
 
     <table class="table mt-5 mb-5">
+        <tbody>
+
+        {% for article in articles %}
+            <tr name="listeArticle">
+                <td class="simple-space small-font">{{ article.id }}</td>
+                <td class="simple-space small-font">{{ article.auteur}}</td>
+                <td class="simple-space small-font">{{ "18/01/2019"}}</td>
+            </tr>
+        {% endfor %}
+
+        </tbody>
         <thead>
         <tr>
             <th class="simple-space border-0" scope="col">Articles</th>
@@ -10,29 +21,6 @@
             <th class="simple-space border-0" scope="col">Date</th>
         </tr>
         </thead>
-        <tbody>
-
-        {% for article in articles %}
-        <tr name="listeArticle">
-            <td class="simple-space small-font">{{ article.id }}</td>
-            <td class="simple-space small-font">{{ article.auteur}}</td>
-            <td class="simple-space small-font">{{ "18/01/2019"}}</td>
-        </tr>
-        {% endfor %}
-
-        <!--
-        <tr>
-            <td class="simple-space small-font">Jacob</td>
-            <td class="simple-space small-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-            <td class="simple-space small-font">17/04/2019</td>
-        </tr>
-        <tr>
-            <td class="simple-space small-font">Larry</td>
-            <td class="simple-space small-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-            <td class="simple-space small-font">17/04/2019</td>
-        </tr>
-        -->
-        </tbody>
     </table>
 
     <nav aria-label="Page navigation example">

@@ -239,3 +239,6 @@ tr[name="listeArticle"]:hover {
     background-color: #3E3F42;
     color: #fff;
 }
+.formulaire {
+    margin: 2rem 35rem;
+}

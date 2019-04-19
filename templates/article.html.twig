@@ -24,24 +24,28 @@
                 <button type="button" class="btn btn-sm btn-outline-dark">Share</button>
             </div>
         </div>
-        <div class="row">
-            <div class="mb-5 col-8 offset-md-2 text-justify simple-space content-article text-dark">
-                {{ article.id }}
-            </div>
-        </div>
+        {% for commentaire in commentaires %}
         <div class="row">
             <div class="mb-5 col-1 offset-md-2">
                 <div class="member-picture rounded">
                 </div>
-                <span class="d-block simple-space text-primary small-font mt-2 text-center">Matt94</span>
+                <span class="d-block simple-space text-primary small-font mt-2 text-center">{{"Name"}}</span>
             </div>
             <div class="col-4 comment-zone pl-3 pr-3 pt-2 pb-2 h-100">
-                <p>Super travail bravo !</p>
+                <p>{{commentaire.commentaire}}</p>
                 <p>À bientôt</p>
-                <span class="d-block small-font text-secondary font-italic float-right">17/03/2019</span>
+                <span class="d-block small-font text-secondary font-italic float-right">{{commentaire.date|date("m/d/Y")}}</span>
             </div>
         </div>
+        {% endfor %}
+        <div class="row">
 
+                <div class="mb-5 col-8 offset-md-2 text-justify simple-space content-article text-dark">
+                    {# {{ commentaire.commentaire }} #}
+                </div>
+
+        </div>
+{{ if  }}
         <!-- Mettre un IF si la personne est connectée -->
         <div class="row mt-3">
             <div class="col-8 offset-md-2">
