@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="312811d4-7c69-42d8-a899-5c0bfdb522c5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,8 +146,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Makefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+            <state relative-caret-position="60">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -317,9 +316,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="240" />
-    <option name="y" value="128" />
+    <option name="y" value="127" />
     <option name="width" value="1440" />
-    <option name="height" value="773" />
+    <option name="height" value="774" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -369,18 +368,7 @@
               <item name="ipssi-sf-tp" type="b2602c69:ProjectViewProjectNode" />
               <item name="ipssi-sf-tp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ipssi-sf-tp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ipssi-sf-tp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ipssi-sf-tp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ipssi-sf-tp" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -399,7 +387,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -439,7 +427,7 @@
       <workItem from="1555610303906" duration="3249000" />
       <workItem from="1555613590592" duration="103000" />
       <workItem from="1555613746877" duration="4033000" />
-      <workItem from="1555660592858" duration="6759000" />
+      <workItem from="1555660592858" duration="6925000" />
     </task>
     <task id="LOCAL-00001" summary="Modification de &quot;hello&quot; en &quot;Hello je suis matisse&quot;">
       <created>1555493223184</created>
@@ -553,11 +541,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555668443163</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Makefile 4ème tentative">
+      <created>1555669025579</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1555669025579</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84555000" />
+    <option name="totallyTimeSpent" value="84721000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -631,7 +626,8 @@
     <MESSAGE value="Makefile" />
     <MESSAGE value="Makefile 2" />
     <MESSAGE value="Makefile 3ème tentative" />
-    <option name="LAST_COMMIT_MESSAGE" value="Makefile 3ème tentative" />
+    <MESSAGE value="Makefile 4ème tentative" />
+    <option name="LAST_COMMIT_MESSAGE" value="Makefile 4ème tentative" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/game.html.twig">
@@ -949,8 +945,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        <state relative-caret-position="60">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
