@@ -11,6 +11,14 @@ help:
 
 ## test
 ## --------------
+.PHONY: tests
+tests:
+	vendor/bin/phpcs src
+	vendor/bin/phpstan analyse --level 6 src
+
+.PHONY: tests-fix
+tests-fix:
+	vendor/bin/phpcbf src
 
 .PHONY: start #Démarre le projet
 start:
