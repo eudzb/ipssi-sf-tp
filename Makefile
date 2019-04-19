@@ -1,6 +1,8 @@
+DC=docker-compose
+binConsole=php bin/console
 .DEFAULT_GOAL := help
 
-.PHONY: help ## Generate list of targets with descriptions
+.PHONY: help
 help:
 		@grep '##' Makefile \
 		| grep -v 'grep\|sed' \
@@ -9,8 +11,32 @@ help:
 		| sed 's/\(##\)/\t/' \
 		| expand -t14
 
-## test
-## --------------
+.PHONY: fstart
+fstart:
+	$(DC) pull || true
+	$(DC) build
+	$(DC) up -d
+	$(DC) exec -u 1000:1000 app composer install
+	$(DC) exec -u 1000:1000 app $(binConsole) doctrine:database:create
+
+.PHONY: start
+start:
+	$(DC) up -d
+	$(DC) exec -u 1000:1000 app composer install
+
+.PHONY: dup
+dup:
+	$(DC) stop
+	$(DC) up -d
+
+.PHONY: stop
+stop:
+	$(DC) down
+
+.PHONY: exe
+exe:
+	$(DC) exec -u 1000:1000 app /bin/bash
+
 .PHONY: tests
 tests:
 	vendor/bin/phpcs src
@@ -19,13 +45,3 @@ tests:
 .PHONY: tests-fix
 tests-fix:
 	vendor/bin/phpcbf src
-
-.PHONY: start #Démarre le projet
-start:
-	docker-compose up -d
-	docker-compose exec -u 1000:1000 app composer install
-
-.PHONY: exec #Permet de se connecter à l'intérieur du container
-exec:
-	docker-compose exec -u 1000:1000 app bash
-	
