@@ -1,8 +1,8 @@
-FIG=docker-compose
-CONSOLE=php bin/console
+DC=docker-compose
+binConsole=php bin/console
 .DEFAULT_GOAL := help
 
-.PHONY: help ## Generate list of targets with descriptions
+.PHONY: help
 help:
 		@grep '##' Makefile \
 		| grep -v 'grep\|sed' \
@@ -11,49 +11,41 @@ help:
 		| sed 's/\(##\)/\t/' \
 		| expand -t14
 
-##
-## Project setup & day to day shortcuts
-##----------------------------------f-----------------------------------------
-##----------------------------------f-----------------------------------------
-
-.PHONY: fstart ## Start the project (The first launch of the app)
+.PHONY: fstart
 fstart: docker-compose.override.yml
-	$(FIG) pull || true
-	$(FIG) build
-	$(FIG) up -d
-	$(FIG) exec -u 1000:1000 app composer install
-	$(FIG) exec -u 1000:1000 app $(CONSOLE) doctrine:database:create
+	$(DC) pull || true
+	$(DC) build
+	$(DC) up -d
+	$(DC) exec -u 1000:1000 app composer install
+	$(DC) exec -u 1000:1000 app $(binConsole) doctrine:database:create
 
-.PHONY: start ## Start the project
+.PHONY: start
 start: docker-compose.override.yml
-	$(FIG) up -d
-	$(FIG) exec -u 1000:1000 app composer install
+	$(DC) up -d
+	$(DC) exec -u 1000:1000 app composer install
 
-.PHONY: dup ## restart the project
+.PHONY: dup
 dup:
-	$(FIG) stop
-	$(FIG) up -d
+	$(DC) stop
+	$(DC) up -d
 
-.PHONY: stop ## stop the project
+.PHONY: stop
 stop:
-	$(FIG) down
+	$(DC) down
 
-.PHONY: exe ## Run bash in the app container
+.PHONY: exe
 exe:
-	$(FIG) exec -u 1000:1000 app /bin/bash
+	$(DC) exec -u 1000:1000 app /bin/bash
 
-.PHONY: tests ## Lance les tests de l'applications
+.PHONY: tests
 tests:
 	vendor/bin/phpcs src
 	vendor/bin/phpstan analyse --level 6 src
 
-.PHONY: tests-fix ## Fix le cs de mon app
+.PHONY: tests-fix
 tests-fix:
 	vendor/bin/phpcbf src
 
-##
-## Dependencies Files
-##---------------------------------------------------------------------------
 
 docker-compose.override.yml: docker-compose.override.yml.dist
 	$(RUN) cp docker-compose.override.yml.dist docker-compose.override.yml
