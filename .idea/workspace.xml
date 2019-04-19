@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="312811d4-7c69-42d8-a899-5c0bfdb522c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Form/InscriptionType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/my-tp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/my-tp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes/inscription.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes/inscription.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/inscriptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/inscriptionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/inscription.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inscription.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -160,8 +149,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Makefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="380">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -454,7 +443,7 @@
       <workItem from="1555610303906" duration="3249000" />
       <workItem from="1555613590592" duration="103000" />
       <workItem from="1555613746877" duration="4033000" />
-      <workItem from="1555660592858" duration="4449000" />
+      <workItem from="1555660592858" duration="4757000" />
     </task>
     <task id="LOCAL-00001" summary="Modification de &quot;hello&quot; en &quot;Hello je suis matisse&quot;">
       <created>1555493223184</created>
@@ -540,11 +529,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555663129992</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Inscription terminé !">
+      <created>1555666725691</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1555666725691</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82245000" />
+    <option name="totallyTimeSpent" value="82553000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -614,7 +610,8 @@
     <MESSAGE value="Ajout de : Liens vers BDD + affichage des articles" />
     <MESSAGE value="Ajout de : fixture commentaire" />
     <MESSAGE value="Mise à jour" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mise à jour" />
+    <MESSAGE value="Inscription terminé !" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inscription terminé !" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/game.html.twig">
@@ -932,8 +929,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        <state relative-caret-position="380">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
