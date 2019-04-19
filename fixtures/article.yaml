@@ -1,0 +1,6 @@
+App\Entity\Article:
+  Article-{1..30}:
+    __construct: false
+    auteur: '<name()>'
+    title: '<title()>'
+

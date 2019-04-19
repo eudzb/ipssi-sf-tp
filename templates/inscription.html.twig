@@ -1,3 +1,27 @@
 {% extends 'base.html.twig' %}
 
-{% block body %} Hello {% endblock %}
+{% block body %}
+    {{ form_start(InscriptionType) }}
+    <form class=" form text-center" action='' method="POST">
+        <fieldset>
+            <div id="legend">
+                <legend class="mb-2 text-center">Inscrivez-vous</legend>
+                <div class="formulaire">
+                    {#   {{ form_label(InscriptionType.php.name,
+                           'label',
+                           {'attr': {
+                               'class': 'text-success'
+                           }
+                           })
+                       }}#}
+                    {{ form_errors(InscriptionType) }}
+                    {{ form_rest(InscriptionType) }}
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-success " type="submit">Enregistrer</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    {{ form_end (InscriptionType) }}
+{% endblock %}
