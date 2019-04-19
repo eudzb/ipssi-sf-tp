@@ -2,21 +2,22 @@
 
 .PHONY: help ## Generate list of targets with descriptions
 help:
-        @grep '##' Makefile \
-        | grep -v 'grep\|sed' \
-        | sed 's/^\.PHONY: \(.*\) ##[\s|\S]*\(.*\)/\1:\t\2/' \
-        | sed 's/\(^##\)//' \
-        | sed 's/\(##\)/\t/' \
-        | expand -t14
+		@grep '##' Makefile \
+		| grep -v 'grep\|sed' \
+		| sed 's/^\.PHONY: \(.*\) ##[\s|\S]*\(.*\)/\1:\t\2/' \
+		| sed 's/\(^##\)//' \
+		| sed 's/\(##\)/\t/' \
+		| expand -t14
 
 ## test
 ## --------------
 
 .PHONY: start #Démarre le projet
 start:
-    docker-compose up -d
-    docker-compose exec -u 1000:1000 app composer install
+	docker-compose up -d
+	docker-compose exec -u 1000:1000 app composer install
 
 .PHONY: exec #Permet de se connecter à l'intérieur du container
 exec:
-    docker-compose exec -u 1000:1000 app bash
+	docker-compose exec -u 1000:1000 app bash
+	
